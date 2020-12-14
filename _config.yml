@@ -4,11 +4,11 @@
 # Replace the baseurl with the name of this repository. For example, if the repository is named
 # "my-site-repository", then update the baseurl like so:
 # baseurl: "/my-site-repository"
-baseurl: ""
+baseurl: "/sdg-site-bih-testing"
 # The next line should be the URL of your data repository published site. To find this,
 # go to your data repository in Github, and click "Settings", then scroll down to the
 # "Github Pages" section. Copy/paste the link in the green section.
-remote_data_prefix: "https://pixerize.github.io/sdg-data-bosnia"
+remote_data_prefix: "http://brock.tips/sdg-data-bosnia-testing"
 # In the next few items, replace "open-sdg" with the name of your GitHub
 # organization, and "open-sdg-data-starter" with the name of your data repository.
 # URL for the "Edit Data" button on indicators.
@@ -29,7 +29,7 @@ languages:
 # Recommended: set this to a particular "release" of Open SDG. For example:
 #remote_theme: open-sdg/open-sdg@1.1.0
 #remote_theme: open-sdg/open-sdg@master
-remote_theme: brockfanning/open-sdg@bosnia-feature-set
+remote_theme: brockfanning/open-sdg@bosnia-feature-set-testing
 
 # Replace this title as needed.
 title: custom.indicator_title
@@ -173,3 +173,7 @@ goal_image_extension: png
 accessible_tabs: true
 accessible_charts: true
 series_toggle: true
+
+column_names:
+  series: SERIES
+  units: UNIT_MEASURE

@@ -3,7 +3,7 @@ name: Deploy to staging
 on:
   push:
     branches:
-      - develop
+      - source-data-import
   schedule:
     - cron: '10 0 * * *'
   repository_dispatch:
