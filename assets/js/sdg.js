@@ -2166,7 +2166,7 @@ function sortData(rows, selectedUnit) {
 
   // calculate some initial values:
   this.years = helpers.getUniqueValuesByProperty(helpers.YEAR_COLUMN, this.data);
-  this.hasGeoData = helpers.dataHasGeoCodes(this.data);
+  this.hasGeoData = helpers.dataHasGeoCodes(this.allColumns);
   this.hasUnits = helpers.dataHasUnits(this.allColumns);
   this.initialiseUnits();
   this.initialiseFields();
