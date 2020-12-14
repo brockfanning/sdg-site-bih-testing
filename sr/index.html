@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://pixerize.github.io/sdg-data-bosnia/sr',
+  remoteDataBaseUrl: 'http://brock.tips/sdg-data-bosnia-testing/sr',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -111,13 +111,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/assets/js/lib/classList.js"></script>
+        <script src="/sdg-site-bih-testing/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/sdg-site-bih-testing/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/sdg-site-bih-testing/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -127,7 +127,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20201214152547">
+        <link rel="stylesheet" href="/sdg-site-bih-testing/assets/css/style.css?v=20201214153620">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -159,8 +159,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/sr/" id="home">
-        <img src="/assets/img/SDG_logo.png" alt="Циљеви одрживог развоја - 17 циљева за трансформирање нашег свијета" />
+      <a class="navbar-brand" href="/sdg-site-bih-testing/sr/" id="home">
+        <img src="/sdg-site-bih-testing/assets/img/SDG_logo.png" alt="Циљеви одрживог развоја - 17 циљева за трансформирање нашег свијета" />
       </a>
 
       <div class="mobile-widgets">
@@ -172,15 +172,15 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Српски</span>
       <span class="language-abbreviation">sr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/">
+            <a href="/sdg-site-bih-testing/">
               English
             </a>
           </li><li>
-            <a href="/bs/">
+            <a href="/sdg-site-bih-testing/bs/">
               Bosanski
             </a>
           </li><li>
-            <a href="/hr/">
+            <a href="/sdg-site-bih-testing/hr/">
               Hrvatski
             </a>
           </li></ul>
@@ -198,15 +198,15 @@ var translations = {
             aria-haspopup="true">
           <button data-target="menu-mobile" aria-expanded="false">Мени</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/sr/goals">Циљеви</a>
+    <a href="/sdg-site-bih-testing/sr/goals">Циљеви</a>
     </li><li class="nav-link ">
-    <a href="/sr/reporting-status">Статус извјештавања</a>
+    <a href="/sdg-site-bih-testing/sr/reporting-status">Статус извјештавања</a>
     </li><li class="nav-link ">
-    <a href="/sr/about">О нама</a>
+    <a href="/sdg-site-bih-testing/sr/about">О нама</a>
     </li><li class="nav-link ">
-    <a href="/sr/publications">Публикације</a>
+    <a href="/sdg-site-bih-testing/sr/publications">Публикације</a>
     </li><li class="nav-link ">
-    <a href="/sr/covid-19-impact">COVID-19 Утицај</a>
+    <a href="/sdg-site-bih-testing/sr/covid-19-impact">COVID-19 Утицај</a>
     </li><li class="language-toggle-menu-header">
     
 
@@ -221,15 +221,15 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Српски</span>
       <span class="language-abbreviation">sr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/">
+            <a href="/sdg-site-bih-testing/">
               English
             </a>
           </li><li>
-            <a href="/bs/">
+            <a href="/sdg-site-bih-testing/bs/">
               Bosanski
             </a>
           </li><li>
-            <a href="/hr/">
+            <a href="/sdg-site-bih-testing/hr/">
               Hrvatski
             </a>
           </li></ul>
@@ -246,7 +246,7 @@ var translations = {
             aria-haspopup="true">
           <button data-target="search-mobile" aria-expanded="false">Претраживање</button>
           <div id="search-mobile" class="menu-target">
-  <form action="/sr/search">
+  <form action="/sdg-site-bih-testing/sr/search">
     <input type="text" name="q" id="indicator_search-mobile" title="Претраживање" />
     <label class="sr-only" for="indicator_search-mobile">Претраживање</label>
     <button aria-label="Претраживање" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -257,7 +257,7 @@ var translations = {
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/sr/search">
+  <form action="/sdg-site-bih-testing/sr/search">
     <input type="text" name="q" id="indicator_search" title="Претраживање" />
     <label class="sr-only" for="indicator_search">Претраживање</label>
     <button aria-label="Претраживање" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -266,15 +266,15 @@ var translations = {
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/sr/goals">Циљеви</a>
+    <a href="/sdg-site-bih-testing/sr/goals">Циљеви</a>
     </li><li class="nav-link ">
-    <a href="/sr/reporting-status">Статус извјештавања</a>
+    <a href="/sdg-site-bih-testing/sr/reporting-status">Статус извјештавања</a>
     </li><li class="nav-link ">
-    <a href="/sr/about">О нама</a>
+    <a href="/sdg-site-bih-testing/sr/about">О нама</a>
     </li><li class="nav-link ">
-    <a href="/sr/publications">Публикације</a>
+    <a href="/sdg-site-bih-testing/sr/publications">Публикације</a>
     </li><li class="nav-link ">
-    <a href="/sr/covid-19-impact">COVID-19 Утицај</a>
+    <a href="/sdg-site-bih-testing/sr/covid-19-impact">COVID-19 Утицај</a>
     </li><li class="language-toggle-menu-header">
     
 
@@ -289,15 +289,15 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Српски</span>
       <span class="language-abbreviation">sr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/">
+            <a href="/sdg-site-bih-testing/">
               English
             </a>
           </li><li>
-            <a href="/bs/">
+            <a href="/sdg-site-bih-testing/bs/">
               Bosanski
             </a>
           </li><li>
-            <a href="/hr/">
+            <a href="/sdg-site-bih-testing/hr/">
               Hrvatski
             </a>
           </li></ul>
@@ -335,7 +335,7 @@ var translations = {
     
         <div class="row no-gutters">
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/1">
+                <a href="/sdg-site-bih-testing/sr/1">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/1.png" id="goal-1" alt="Свијет без сиромаштва - Циљ 1" />
               </a>
             </div>
@@ -343,7 +343,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/2">
+                <a href="/sdg-site-bih-testing/sr/2">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/2.png" id="goal-2" alt="Свијет без глади - Циљ 2" />
               </a>
             </div>
@@ -351,7 +351,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/3">
+                <a href="/sdg-site-bih-testing/sr/3">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/3.png" id="goal-3" alt="Здравље и благостање - Циљ 3" />
               </a>
             </div>
@@ -359,7 +359,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/4">
+                <a href="/sdg-site-bih-testing/sr/4">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/4.png" id="goal-4" alt="Квалитетно образовање - Циљ 4" />
               </a>
             </div>
@@ -367,7 +367,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/5">
+                <a href="/sdg-site-bih-testing/sr/5">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/5.png" id="goal-5" alt="Родна равноправност - Циљ 5" />
               </a>
             </div>
@@ -375,7 +375,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/6">
+                <a href="/sdg-site-bih-testing/sr/6">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/6.png" id="goal-6" alt="Чиста вода и санитарни услови - Циљ 6" />
               </a>
             </div>
@@ -383,7 +383,7 @@ var translations = {
     
         <div class="row no-gutters">
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/7">
+                <a href="/sdg-site-bih-testing/sr/7">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/7.png" id="goal-7" alt="Приступачна енергија из чистих извора - Циљ 7" />
               </a>
             </div>
@@ -391,7 +391,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/8">
+                <a href="/sdg-site-bih-testing/sr/8">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/8.png" id="goal-8" alt="Достојанствен рад и економски раст - Циљ 8" />
               </a>
             </div>
@@ -399,7 +399,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/9">
+                <a href="/sdg-site-bih-testing/sr/9">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/9.png" id="goal-9" alt="Индустрија, иновације и инфраструктура - Циљ 9" />
               </a>
             </div>
@@ -407,7 +407,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/10">
+                <a href="/sdg-site-bih-testing/sr/10">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/10.png" id="goal-10" alt="Смањење неједнакости - Циљ 10" />
               </a>
             </div>
@@ -415,7 +415,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/11">
+                <a href="/sdg-site-bih-testing/sr/11">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/11.png" id="goal-11" alt="Одрживи градови и заједнице - Циљ 11" />
               </a>
             </div>
@@ -423,7 +423,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/12">
+                <a href="/sdg-site-bih-testing/sr/12">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/12.png" id="goal-12" alt="Одговорна потрошња и производња - Циљ 12" />
               </a>
             </div>
@@ -431,7 +431,7 @@ var translations = {
     
         <div class="row no-gutters">
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/13">
+                <a href="/sdg-site-bih-testing/sr/13">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/13.png" id="goal-13" alt="Очување климе - Циљ 13" />
               </a>
             </div>
@@ -439,7 +439,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/14">
+                <a href="/sdg-site-bih-testing/sr/14">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/14.png" id="goal-14" alt="Очување воденог свијета - Циљ 14" />
               </a>
             </div>
@@ -447,7 +447,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/15">
+                <a href="/sdg-site-bih-testing/sr/15">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/15.png" id="goal-15" alt="Очување живота на земљи - Циљ 15" />
               </a>
             </div>
@@ -455,7 +455,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/16">
+                <a href="/sdg-site-bih-testing/sr/16">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/16.png" id="goal-16" alt="Мир, правда и снажне институције - Циљ 16" />
               </a>
             </div>
@@ -463,7 +463,7 @@ var translations = {
     
         
             <div class="col-xs-4 col-md-2">
-                <a href="/sr/17">
+                <a href="/sdg-site-bih-testing/sr/17">
                   <img src="https://sdgbosnia.co.uk/assets/img/goals/sr/17.png" id="goal-17" alt="Партнерством до циља - Циљ 17" />
               </a>
             </div>
@@ -478,15 +478,15 @@ var translations = {
     </div>
     </div>
     <div class="zip-download-container">
-    <a href="https://pixerize.github.io/sdg-data-bosnia/sr/zip/all_indicators.zip"
+    <a href="http://brock.tips/sdg-data-bosnia-testing/sr/zip/all_indicators.zip"
        class="btn btn-primary btn-download" aria-describedby="zip-download-info">
         Преузми све податке
     </a>
     <div id="zip-download-info">
-        ZIP датотека - 141.3 kB
+        ZIP датотека - 621.0 kB
         
             <br>
-            Подаци посљедњи пут ажурирани - Dec 10, 2020
+            Подаци посљедњи пут ажурирани - Dec 14, 2020
         
     </div>
 </div>
@@ -506,7 +506,7 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/sr/about/cookies-and-privacy/">Колачићи</a>
+                <a href="/sdg-site-bih-testing/sr/about/cookies-and-privacy/">Колачићи</a>
                 
                 </li>
               
@@ -543,12 +543,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Претраживање';</script>
 
-<script src='/assets/js/sdg.js?v=20201214152547'></script>
+<script src='/sdg-site-bih-testing/assets/js/sdg.js?v=20201214153620'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20201214152547"></script><script>
+    <script src="/sdg-site-bih-testing/assets/js/custom.js?v=20201214153620"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

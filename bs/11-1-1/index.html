@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://pixerize.github.io/sdg-data-bosnia/bs',
+  remoteDataBaseUrl: 'http://brock.tips/sdg-data-bosnia-testing/bs',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -116,13 +116,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/assets/js/lib/classList.js"></script>
+        <script src="/sdg-site-bih-testing/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/sdg-site-bih-testing/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/sdg-site-bih-testing/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -132,7 +132,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20201214152547">
+        <link rel="stylesheet" href="/sdg-site-bih-testing/assets/css/style.css?v=20201214153620">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -164,8 +164,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/bs/" id="home">
-        <img src="/assets/img/SDG_logo.png" alt="Ciljevi održivog razvoja - 17 ciljeva za transformiranje našeg svijeta" />
+      <a class="navbar-brand" href="/sdg-site-bih-testing/bs/" id="home">
+        <img src="/sdg-site-bih-testing/assets/img/SDG_logo.png" alt="Ciljevi održivog razvoja - 17 ciljeva za transformiranje našeg svijeta" />
       </a>
 
       <div class="mobile-widgets">
@@ -177,15 +177,15 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Bosanski</span>
       <span class="language-abbreviation">bs</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/11-1-1/">
+            <a href="/sdg-site-bih-testing/11-1-1/">
               English
             </a>
           </li><li>
-            <a href="/sr/11-1-1/">
+            <a href="/sdg-site-bih-testing/sr/11-1-1/">
               Српски
             </a>
           </li><li>
-            <a href="/hr/11-1-1/">
+            <a href="/sdg-site-bih-testing/hr/11-1-1/">
               Hrvatski
             </a>
           </li></ul>
@@ -203,15 +203,15 @@ var translations = {
             aria-haspopup="true">
           <button data-target="menu-mobile" aria-expanded="false">Meni</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/bs/goals">Ciljevi</a>
+    <a href="/sdg-site-bih-testing/bs/goals">Ciljevi</a>
     </li><li class="nav-link ">
-    <a href="/bs/reporting-status">Status izvještavanja</a>
+    <a href="/sdg-site-bih-testing/bs/reporting-status">Status izvještavanja</a>
     </li><li class="nav-link ">
-    <a href="/bs/about">O nama</a>
+    <a href="/sdg-site-bih-testing/bs/about">O nama</a>
     </li><li class="nav-link ">
-    <a href="/bs/publications">Publikacije</a>
+    <a href="/sdg-site-bih-testing/bs/publications">Publikacije</a>
     </li><li class="nav-link ">
-    <a href="/bs/covid-19-impact">COVID-19 Uticaj</a>
+    <a href="/sdg-site-bih-testing/bs/covid-19-impact">COVID-19 Uticaj</a>
     </li><li class="language-toggle-menu-header">
     
 
@@ -226,15 +226,15 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Bosanski</span>
       <span class="language-abbreviation">bs</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/11-1-1/">
+            <a href="/sdg-site-bih-testing/11-1-1/">
               English
             </a>
           </li><li>
-            <a href="/sr/11-1-1/">
+            <a href="/sdg-site-bih-testing/sr/11-1-1/">
               Српски
             </a>
           </li><li>
-            <a href="/hr/11-1-1/">
+            <a href="/sdg-site-bih-testing/hr/11-1-1/">
               Hrvatski
             </a>
           </li></ul>
@@ -251,7 +251,7 @@ var translations = {
             aria-haspopup="true">
           <button data-target="search-mobile" aria-expanded="false">Pretraživanje</button>
           <div id="search-mobile" class="menu-target">
-  <form action="/bs/search">
+  <form action="/sdg-site-bih-testing/bs/search">
     <input type="text" name="q" id="indicator_search-mobile" title="Pretraživanje" />
     <label class="sr-only" for="indicator_search-mobile">Pretraživanje</label>
     <button aria-label="Pretraživanje" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -262,7 +262,7 @@ var translations = {
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/bs/search">
+  <form action="/sdg-site-bih-testing/bs/search">
     <input type="text" name="q" id="indicator_search" title="Pretraživanje" />
     <label class="sr-only" for="indicator_search">Pretraživanje</label>
     <button aria-label="Pretraživanje" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -271,15 +271,15 @@ var translations = {
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/bs/goals">Ciljevi</a>
+    <a href="/sdg-site-bih-testing/bs/goals">Ciljevi</a>
     </li><li class="nav-link ">
-    <a href="/bs/reporting-status">Status izvještavanja</a>
+    <a href="/sdg-site-bih-testing/bs/reporting-status">Status izvještavanja</a>
     </li><li class="nav-link ">
-    <a href="/bs/about">O nama</a>
+    <a href="/sdg-site-bih-testing/bs/about">O nama</a>
     </li><li class="nav-link ">
-    <a href="/bs/publications">Publikacije</a>
+    <a href="/sdg-site-bih-testing/bs/publications">Publikacije</a>
     </li><li class="nav-link ">
-    <a href="/bs/covid-19-impact">COVID-19 Uticaj</a>
+    <a href="/sdg-site-bih-testing/bs/covid-19-impact">COVID-19 Uticaj</a>
     </li><li class="language-toggle-menu-header">
     
 
@@ -294,15 +294,15 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Bosanski</span>
       <span class="language-abbreviation">bs</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/11-1-1/">
+            <a href="/sdg-site-bih-testing/11-1-1/">
               English
             </a>
           </li><li>
-            <a href="/sr/11-1-1/">
+            <a href="/sdg-site-bih-testing/sr/11-1-1/">
               Српски
             </a>
           </li><li>
-            <a href="/hr/11-1-1/">
+            <a href="/sdg-site-bih-testing/hr/11-1-1/">
               Hrvatski
             </a>
           </li></ul>
@@ -399,8 +399,8 @@ var translations = {
   
 <ol class="breadcrumb">
   
-  <li><a href="/bs/">Naslovna</a></li>
-  <li><a href="/bs/11" title="Učiniti gradove i naselja inkluzivnim, bezbjednim, izdržljivim i održivim">Cilj 11</a></li>
+  <li><a href="/sdg-site-bih-testing/bs/">Naslovna</a></li>
+  <li><a href="/sdg-site-bih-testing/bs/11" title="Učiniti gradove i naselja inkluzivnim, bezbjednim, izdržljivim i održivim">Cilj 11</a></li>
   <li class="active">Indikator 11.1.1</li>
   
 </ol>
@@ -410,13 +410,13 @@ var translations = {
     
 <div class="previous-next-links row">
     <div class="col-xs-3 col-md-3 col-lg-4 pull-left text-left">
-        <a class="btn btn-primary" href="/bs/10-c-1" aria-labelledby="previous-link">
+        <a class="btn btn-primary" href="/sdg-site-bih-testing/bs/10-c-1" aria-labelledby="previous-link">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
             <span id="previous-link" class="hidden-sm hidden-xs">Prethodni indikator</span>
         </a>
     </div>
     <div class="col-xs-3 col-md-3 col-lg-4 pull-right text-right">
-        <a class="btn btn-primary" href="/bs/11-2-1" aria-labelledby="next-link">
+        <a class="btn btn-primary" href="/sdg-site-bih-testing/bs/11-2-1" aria-labelledby="next-link">
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
             <span id="next-link" class="hidden-sm hidden-xs">Sljedeći indikator</span>
         </a>
@@ -431,7 +431,7 @@ var translations = {
     <div class="row">
       
       <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-        <a href="/bs/11" title="Pogledajte listu indikatora ovog cilja">
+        <a href="/sdg-site-bih-testing/bs/11" title="Pogledajte listu indikatora ovog cilja">
           <img src="https://sdgbosnia.co.uk/assets/img/goals/bs/11.png" alt="Izdržljiviji gradovi i naselja - Cilj 11" id="goal-11"/>
         </a>
       </div>
@@ -490,7 +490,7 @@ var translations = {
     <p>Odaberite kategorije iz  padajućeg menija ispod kako biste vidjeli različite podjele podataka. Neki neće biti dostupni dok se ne odabere viši nivo.</p>
   </span>
   <div id="fields">
-    <p class="async-loading" data-img="/assets/img/loading-small.gif"></p>
+    <p class="async-loading" data-img="/sdg-site-bih-testing/assets/img/loading-small.gif"></p>
   </div>
 </div>
 
@@ -503,9 +503,9 @@ var translations = {
 
   <div id="datatables">
 
-    <a href="https://pixerize.github.io/sdg-data-bosnia/bs/headline/11-1-1.csv" class="btn btn-primary btn-download" download="indicator_11-1-1.csv" tabindex="0" role="button">Preuzmite CSV naslov</a>
+    <a href="http://brock.tips/sdg-data-bosnia-testing/bs/headline/11-1-1.csv" class="btn btn-primary btn-download" download="indicator_11-1-1.csv" tabindex="0" role="button">Preuzmite CSV naslov</a>
 
-    <a href="https://pixerize.github.io/sdg-data-bosnia/bs/data/11-1-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_11-1-1.csv' tabindex='0' role='button'>Preuzmi izvor CSV</a>
+    <a href="http://brock.tips/sdg-data-bosnia-testing/bs/data/11-1-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_11-1-1.csv' tabindex='0' role='button'>Preuzmi izvor CSV</a>
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
@@ -521,251 +521,15 @@ var translations = {
         
         
         
-        <th scope="col" class="table-value">Units</th>
+        <th scope="col">UNIT_MEASURE</th>
+        
+        
+        
+        <th scope="col" class="table-value">SERIES</th>
         
         
       </thead>
       <tbody>
-        
-        <tr>
-          
-          
-          <td>2001</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2002</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2003</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2004</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2005</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2006</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2007</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2008</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2009</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
         
         <tr>
           
@@ -778,23 +542,11 @@ var translations = {
           
           
           
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
+          <td>NUMBER</td>
           
           
           
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
+          <td class="table-value">EN_LND_SLUM</td>
           
           
         </tr>
@@ -810,39 +562,11 @@ var translations = {
           
           
           
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
+          <td>NUMBER</td>
           
           
           
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td class="table-value">%</td>
+          <td class="table-value">EN_LND_SLUM</td>
           
           
         </tr>
@@ -852,6 +576,8 @@ var translations = {
   </div>
 
   <div id="datatableFooter">
+    
+    <p>Izvor: UNSTATS</p>
     
     
     
@@ -865,7 +591,7 @@ var translations = {
 
 <section>
 
-  <p class="async-loading" data-img="/assets/img/loading-small.gif"></p>
+  <p class="async-loading" data-img="/sdg-site-bih-testing/assets/img/loading-small.gif"></p>
 
   <div class="async-loaded spacer medium" style="display:none;">
 
@@ -1145,6 +871,9 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
+        <dt>Izvor:</dt>
+        <dd>UNSTATS</dd>
+        
 
         
 
@@ -1183,6 +912,9 @@ opensdg.chartConfigAlter(function(config, info) {
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
+        
+        <dt>Izvor:</dt>
+        <dd>UNSTATS</dd>
         
 
         
@@ -1435,8 +1167,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/pixerize/sdg-data-bosnia/commit/4f828a4cad2ca6c323f6c5dd865ec6ed4d438f09" target="_blank">
-                2020-12-09: see changes on GitHub <span class="visuallyhidden">otvara se u novom prozoru</span>
+              <a href="https://github.com/brockfanning/sdg-data-bosnia-testing/commit/fb020ca076d7b118af5ca88be7b5e384c8b9783f" target="_blank">
+                2020-12-12: see changes on GitHub <span class="visuallyhidden">otvara se u novom prozoru</span>
               </a>
             
 
@@ -1462,8 +1194,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/pixerize/sdg-data-bosnia/commit/aa9638a2fa93e16bd9401a6524d7e76cdd7714c1" target="_blank">
-                2020-12-09: see changes on GitHub <span class="visuallyhidden">otvara se u novom prozoru</span>
+              <a href="https://github.com/brockfanning/sdg-data-bosnia-testing/commit/a36a735a24d161e7d0d190b28e0d0d0970c24819" target="_blank">
+                2020-12-12: see changes on GitHub <span class="visuallyhidden">otvara se u novom prozoru</span>
               </a>
             
 
@@ -1861,7 +1593,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organizacija </th>
         <td>
           
-            
+            <p>UNSTATS</p>
 
           
         </td>
@@ -1922,6 +1654,10 @@ data-event-label="Change to Sources tab"
             
             
 
+            
+              <a href="https://unstats.un.org/sdgs/indicators/database/" target="_blank">
+                Link to source <span class="visuallyhidden">otvara se u novom prozoru</span>
+              </a>
             
 
           
@@ -2118,7 +1854,7 @@ data-event-label="Change to Sources tab"
                 
                 </li>
               <li>
-                <a href="/bs/about/cookies-and-privacy/">Kolačići</a>
+                <a href="/sdg-site-bih-testing/bs/about/cookies-and-privacy/">Kolačići</a>
                 
                 </li>
               
@@ -2155,12 +1891,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Pretraživanje';</script>
 
-<script src='/assets/js/sdg.js?v=20201214152547'></script>
+<script src='/sdg-site-bih-testing/assets/js/sdg.js?v=20201214153620'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20201214152547"></script><script>
+    <script src="/sdg-site-bih-testing/assets/js/custom.js?v=20201214153620"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
