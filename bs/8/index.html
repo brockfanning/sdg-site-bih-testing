@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'http://brock.tips/sdg-data-bosnia-testing/bs',
+  remoteDataBaseUrl: 'https://pixerize.github.io/sdg-data-bosnia/bs',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -111,13 +111,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/sdg-site-bih-testing/assets/js/lib/classList.js"></script>
+        <script src="/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/sdg-site-bih-testing/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/sdg-site-bih-testing/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -127,7 +127,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-bih-testing/assets/css/style.css?v=20201215162352">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20201216011416">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -159,8 +159,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/sdg-site-bih-testing/bs/" id="home">
-        <img src="/sdg-site-bih-testing/assets/img/SDG_logo.png" alt="Ciljevi održivog razvoja - 17 ciljeva za transformiranje našeg svijeta" />
+      <a class="navbar-brand" href="/bs/" id="home">
+        <img src="/assets/img/SDG_logo.png" alt="Ciljevi održivog razvoja - 17 ciljeva za transformiranje našeg svijeta" />
       </a>
 
       <div class="mobile-widgets">
@@ -172,15 +172,15 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Bosanski</span>
       <span class="language-abbreviation">bs</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/sdg-site-bih-testing/8/">
+            <a href="/8/">
               English
             </a>
           </li><li>
-            <a href="/sdg-site-bih-testing/sr/8/">
+            <a href="/sr/8/">
               Српски
             </a>
           </li><li>
-            <a href="/sdg-site-bih-testing/hr/8/">
+            <a href="/hr/8/">
               Hrvatski
             </a>
           </li></ul>
@@ -198,15 +198,15 @@ var translations = {
             aria-haspopup="true">
           <button data-target="menu-mobile" aria-expanded="false">Meni</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/sdg-site-bih-testing/bs/goals">Ciljevi</a>
+    <a href="/bs/goals">Ciljevi</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-bih-testing/bs/reporting-status">Status izvještavanja</a>
+    <a href="/bs/reporting-status">Status izvještavanja</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-bih-testing/bs/about">O nama</a>
+    <a href="/bs/about">O nama</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-bih-testing/bs/publications">Publikacije</a>
+    <a href="/bs/publications">Publikacije</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-bih-testing/bs/covid-19-impact">COVID-19 Uticaj</a>
+    <a href="/bs/covid-19-impact">COVID-19 Uticaj</a>
     </li><li class="language-toggle-menu-header">
     
 
@@ -221,15 +221,15 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Bosanski</span>
       <span class="language-abbreviation">bs</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/sdg-site-bih-testing/8/">
+            <a href="/8/">
               English
             </a>
           </li><li>
-            <a href="/sdg-site-bih-testing/sr/8/">
+            <a href="/sr/8/">
               Српски
             </a>
           </li><li>
-            <a href="/sdg-site-bih-testing/hr/8/">
+            <a href="/hr/8/">
               Hrvatski
             </a>
           </li></ul>
@@ -246,7 +246,7 @@ var translations = {
             aria-haspopup="true">
           <button data-target="search-mobile" aria-expanded="false">Pretraživanje</button>
           <div id="search-mobile" class="menu-target">
-  <form action="/sdg-site-bih-testing/bs/search">
+  <form action="/bs/search">
     <input type="text" name="q" id="indicator_search-mobile" title="Pretraživanje" />
     <label class="sr-only" for="indicator_search-mobile">Pretraživanje</label>
     <button aria-label="Pretraživanje" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -257,7 +257,7 @@ var translations = {
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/sdg-site-bih-testing/bs/search">
+  <form action="/bs/search">
     <input type="text" name="q" id="indicator_search" title="Pretraživanje" />
     <label class="sr-only" for="indicator_search">Pretraživanje</label>
     <button aria-label="Pretraživanje" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -266,15 +266,15 @@ var translations = {
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/sdg-site-bih-testing/bs/goals">Ciljevi</a>
+    <a href="/bs/goals">Ciljevi</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-bih-testing/bs/reporting-status">Status izvještavanja</a>
+    <a href="/bs/reporting-status">Status izvještavanja</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-bih-testing/bs/about">O nama</a>
+    <a href="/bs/about">O nama</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-bih-testing/bs/publications">Publikacije</a>
+    <a href="/bs/publications">Publikacije</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-bih-testing/bs/covid-19-impact">COVID-19 Uticaj</a>
+    <a href="/bs/covid-19-impact">COVID-19 Uticaj</a>
     </li><li class="language-toggle-menu-header">
     
 
@@ -289,15 +289,15 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Bosanski</span>
       <span class="language-abbreviation">bs</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/sdg-site-bih-testing/8/">
+            <a href="/8/">
               English
             </a>
           </li><li>
-            <a href="/sdg-site-bih-testing/sr/8/">
+            <a href="/sr/8/">
               Српски
             </a>
           </li><li>
-            <a href="/sdg-site-bih-testing/hr/8/">
+            <a href="/hr/8/">
               Hrvatski
             </a>
           </li></ul>
@@ -319,7 +319,7 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/sdg-site-bih-testing/bs/">Naslovna</a></li>
+  <li><a href="/bs/">Naslovna</a></li>
   <li class="active">Cilj 8</li>
   
 </ol>
@@ -328,13 +328,13 @@ var translations = {
     
 <div class="previous-next-links row">
     <div class="col-xs-3 col-md-3 col-lg-4 pull-left text-left">
-        <a class="btn btn-primary" href="/sdg-site-bih-testing/bs/7" aria-labelledby="previous-link">
+        <a class="btn btn-primary" href="/bs/7" aria-labelledby="previous-link">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
             <span id="previous-link" class="hidden-sm hidden-xs">Prethodni cilj</span>
         </a>
     </div>
     <div class="col-xs-3 col-md-3 col-lg-4 pull-right text-right">
-        <a class="btn btn-primary" href="/sdg-site-bih-testing/bs/9" aria-labelledby="next-link">
+        <a class="btn btn-primary" href="/bs/9" aria-labelledby="next-link">
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
             <span id="next-link" class="hidden-sm hidden-xs">Sljedeći cilj</span>
         </a>
@@ -402,7 +402,7 @@ var translations = {
             Izviješteno online
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-1-1">
+        <a href="/bs/8-1-1">
           Godišnja stopa rasta realnog BDP-a po stanovniku
         </a>
         
@@ -433,11 +433,11 @@ var translations = {
       <div class="col-md-12  goal-indicator">
         <span>
           8.2.1
-          <span class="status complete">
-            Izviješteno online
+          <span class="status notstarted">
+            Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-2-1">
+        <a href="/bs/8-2-1">
           Godišnja stopa rasta realnog BDP-a po zaposlenoj osobi
         </a>
         
@@ -468,11 +468,11 @@ var translations = {
       <div class="col-md-12  goal-indicator">
         <span>
           8.3.1
-          <span class="status complete">
-            Izviješteno online
+          <span class="status notstarted">
+            Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-3-1">
+        <a href="/bs/8-3-1">
           Udio neformalnog zapošljavanja u ukupnoj zaposlenosti, prema sektorima i polu
         </a>
         
@@ -507,7 +507,7 @@ var translations = {
             Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-4-1">
+        <a href="/bs/8-4-1">
           Materijalni otisak, materijalni otisak po glavi stanovnika i materijalni otisak po BDP-u
         </a>
         
@@ -526,11 +526,11 @@ var translations = {
       <div class="col-md-12  goal-indicator">
         <span>
           8.4.2
-          <span class="status complete">
-            Izviješteno online
+          <span class="status notstarted">
+            Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-4-2">
+        <a href="/bs/8-4-2">
           Potrošnja domaćeg materijala, potrošnja domaćeg materijala po glavi stanovnika i potrošnja domaćeg materijala po BDP-u
         </a>
         
@@ -565,7 +565,7 @@ var translations = {
             Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-5-1">
+        <a href="/bs/8-5-1">
           Prosječna zarada po satu zaposlenih, prema polu, starosti, zanimanju i osobama sa invaliditetom
         </a>
         
@@ -584,11 +584,11 @@ var translations = {
       <div class="col-md-12  goal-indicator">
         <span>
           8.5.2
-          <span class="status complete">
-            Izviješteno online
+          <span class="status notstarted">
+            Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-5-2">
+        <a href="/bs/8-5-2">
           Stopa nezaposlenosti prema polu, starosti i osobama sa invaliditetom
         </a>
         
@@ -619,11 +619,11 @@ var translations = {
       <div class="col-md-12  goal-indicator">
         <span>
           8.6.1
-          <span class="status complete">
-            Izviješteno online
+          <span class="status notstarted">
+            Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-6-1">
+        <a href="/bs/8-6-1">
           Procenat mladih (u dobi od 15-24 godine) koji nisu u obrazovanju, zapošljavanju ili obuci
         </a>
         
@@ -658,7 +658,7 @@ var translations = {
             Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-7-1">
+        <a href="/bs/8-7-1">
           Udio i broj djece uzrasta 5-17 godina angažovanih u dječijem radu, prema polu i starosti
         </a>
         
@@ -693,7 +693,7 @@ var translations = {
             Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-8-1">
+        <a href="/bs/8-8-1">
           Fatalne i nefatalne povrede na radu na 100.000 radnika, prema polu i migrantskom statusu
         </a>
         
@@ -712,11 +712,11 @@ var translations = {
       <div class="col-md-12  goal-indicator">
         <span>
           8.8.2
-          <span class="status complete">
-            Izviješteno online
+          <span class="status notstarted">
+            Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-8-2">
+        <a href="/bs/8-8-2">
           Nivo nacionalne usklađenosti radnih prava (sloboda udruživanja i kolektivnog pregovaranja) na osnovu tekstualnih izvora Međunarodne organizacije rada (ILO) i nacionalnog zakonodavstva, prema polu i statusu migranata
         </a>
         
@@ -751,7 +751,7 @@ var translations = {
             Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-9-1">
+        <a href="/bs/8-9-1">
           Turizam direktnog BDP-a kao procenat ukupnog BDP-a i stope rasta
         </a>
         
@@ -782,11 +782,11 @@ var translations = {
       <div class="col-md-12  goal-indicator">
         <span>
           8.10.1
-          <span class="status complete">
-            Izviješteno online
+          <span class="status notstarted">
+            Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-10-1">
+        <a href="/bs/8-10-1">
           (a) Broj filijala komercijalnih banaka na 100.000 odraslih i (b) broj automatizovanih bankomata na 100.000 odraslih
         </a>
         
@@ -805,11 +805,11 @@ var translations = {
       <div class="col-md-12  goal-indicator">
         <span>
           8.10.2
-          <span class="status complete">
-            Izviješteno online
+          <span class="status notstarted">
+            Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-10-2">
+        <a href="/bs/8-10-2">
           Udio odraslih (15 i više godina) sa računom u banci ili drugoj finansijskoj instituciji ili sa pružaocem usluge mobilnih novčanih usluga
         </a>
         
@@ -840,11 +840,11 @@ var translations = {
       <div class="col-md-12  goal-indicator">
         <span>
           8.a.1
-          <span class="status complete">
-            Izviješteno online
+          <span class="status notstarted">
+            Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-a-1">
+        <a href="/bs/8-a-1">
           Pomoć za trgovinske obaveze i isplate
         </a>
         
@@ -875,11 +875,11 @@ var translations = {
       <div class="col-md-12  goal-indicator">
         <span>
           8.b.1
-          <span class="status complete">
-            Izviješteno online
+          <span class="status notstarted">
+            Istraživanje izvora podataka
           </span>
         </span>
-        <a href="/sdg-site-bih-testing/bs/8-b-1">
+        <a href="/bs/8-b-1">
           Postojanje razvijene i operacionalizovane nacionalne strategije za zapošljavanje mladih, kao posebna strategija ili kao dio nacionalne strategije zapošljavanja
         </a>
         
@@ -903,7 +903,7 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/sdg-site-bih-testing/bs/about/cookies-and-privacy/">Kolačići</a>
+                <a href="/bs/about/cookies-and-privacy/">Kolačići</a>
                 
                 </li>
               
@@ -940,12 +940,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Pretraživanje';</script>
 
-<script src='/sdg-site-bih-testing/assets/js/sdg.js?v=20201215162352'></script>
+<script src='/assets/js/sdg.js?v=20201216011416'></script>
 
 
     
     
-    <script src="/sdg-site-bih-testing/assets/js/custom.js?v=20201215162352"></script><script>
+    <script src="/assets/js/custom.js?v=20201216011416"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -985,7 +985,6 @@ $(function() {
               stackedDisaggregation: domData.stackeddisaggregation,
               graphAnnotations: domData.graphannotations,
               indicatorDownloads: domData.indicatordownloads,
-              compositeBreakdownLabel: domData.compositebreakdownlabel,
             }),
             view  = new indicatorView(model, {
               rootElement: '#indicatorData',
