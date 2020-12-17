@@ -2380,6 +2380,9 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 @media (min-width: 769px) {
   header .container {
     border-bottom: 2px solid; } }
+.navbar ul.navbar-nav > li > a {
+  font-weight: 600; }
+
 #main-content h1 {
   font-size: 36px;
   margin-bottom: 35px;
@@ -2402,27 +2405,17 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .breadcrumb {
   margin-top: 15px; }
 
-.standalone-indicator-list,
-.publications {
+.standalone-indicator-list, .publications {
   padding: 0; }
-  .standalone-indicator-list li:nth-child(odd),
-  .publications li:nth-child(odd) {
+  .standalone-indicator-list li:nth-child(odd), .publications li:nth-child(odd) {
     background: #ececec; }
-  .standalone-indicator-list li,
-  .publications li {
+  .standalone-indicator-list li, .publications li {
     list-style: none;
     padding: 5px 5px 5px 10px; }
-    .standalone-indicator-list li a,
-    .publications li a {
+    .standalone-indicator-list li a, .publications li a {
       color: #000;
       text-decoration: none;
       transition: .3s; }
-    .standalone-indicator-list li a:hover,
-    .publications li a:hover {
+    .standalone-indicator-list li a:hover, .publications li a:hover {
       padding-left: 5px;
       color: #009DDA; }
-
-.contrast-high .standalone-indicator-list li, .contrast-high .publications li {
-  background: #000; }
-  .contrast-high .standalone-indicator-list li a, .contrast-high .publications li a {
-    color: #fff; }

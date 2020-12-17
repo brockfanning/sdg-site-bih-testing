@@ -1009,8 +1009,8 @@ var indicatorModel = function (options) {
   /**
  * Constants to be used in indicatorModel.js and helper functions.
  */
-var UNIT_COLUMN = 'UNIT_MEASURE';
-var SERIES_COLUMN = 'SERIES';
+var UNIT_COLUMN = 'Units';
+var SERIES_COLUMN = 'Series';
 var GEOCODE_COLUMN = 'GeoCode';
 var YEAR_COLUMN = 'Year';
 var VALUE_COLUMN = 'Value';
